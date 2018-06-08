@@ -14,7 +14,12 @@ class App extends Component {
   render() {
     return (
       <div className="App" style={{ padding: "5rem" }}>
-        <Select value={this.state.value} onChange={this.handleChange} fullWidth>
+        <Select
+          label="Age"
+          value={this.state.value}
+          onChange={this.handleChange}
+          fullWidth
+        >
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
@@ -22,6 +27,7 @@ class App extends Component {
           <MenuItem value={20}>Twenty</MenuItem>
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
+        <button type="submit">Send</button>
       </div>
     );
   }
